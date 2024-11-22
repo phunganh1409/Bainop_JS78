@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bài Tập JavaScript</h1>
+        <div class="input-section">
+            <h2>Nhập Mảng Số Nguyên</h2>
+            <input type="text" id="arrayInput" placeholder="Nhập các số cách nhau bằng dấu phẩy (,)">
+            <button onclick="addNumbers()">Thêm vào mảng</button>
+            <p id="arrayDisplay">Mảng hiện tại: []</p>
+        </div>
+        
+        <div class="actions-section">
+            <h2>Chức Năng</h2>
+            <button onclick="sumPositive()">Tổng Số Dương</button>
+            <button onclick="countPositive()">Đếm Số Dương</button>
+            <button onclick="findMin()">Tìm Số Nhỏ Nhất</button>
+            <button onclick="findMinPositive()">Số Dương Nhỏ Nhất</button>
+            <button onclick="findLastEven()">Số Chẵn Cuối Cùng</button>
+            <button onclick="swapPositions(0, 1)">Đổi Chỗ 2 Vị Trí</button>
+            <button onclick="sortAscending()">Sắp Xếp Tăng Dần</button>
+            <button onclick="findFirstPrime()">Tìm Số Nguyên Tố Đầu Tiên</button>
+            <button onclick="countIntegers([1.2, 2, 3.5])">Đếm Số Nguyên</button>
+            <button onclick="comparePositiveNegative()">So Sánh Số Dương và Số Âm</button>
+        </div>
+
+        <div class="result-section">
+            <h2>Kết Quả</h2>
+            <p id="resultDisplay"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
